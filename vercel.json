@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/index.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    { "src": "/", "dest": "/templates/index.html" },
+    { "src": "/creator", "dest": "/templates/creator.html" },
+    { "src": "/story-of-starland", "dest": "/templates/story-of-starland" }
+  ]
+}
